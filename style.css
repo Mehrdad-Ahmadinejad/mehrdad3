@@ -76,8 +76,8 @@ nav a.active {
   background: url("images/banner.jpg") no-repeat center center;
   background-size: cover;
   height: 300px; /* Adjust as needed */
-  max-width: 1000px;
-  margin: 20px auto;
+  max-width: 1500px;
+  margin: 0px auto;
   border-radius: 8px;
 }
 
