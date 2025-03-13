@@ -5,10 +5,10 @@
   box-sizing: border-box;
 }
 
-/* Body (No Background Image) */
+/* Body (No background image here!) */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0; /* Example background color */
+  background-color: #f0f0f0; /* A simple light grey background */
 }
 
 /* Navigation Bar Styling */
@@ -37,17 +37,21 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Hero Section (Top Banner) */
+nav a.active {
+  text-decoration: underline; /* Highlight 'Home' as active page */
+}
+
+/* Hero Section (Top Banner on Home Page) */
 .hero {
-  /* Background image only at the top banner */
+  /* The ONLY place we use the background image */
   background: url("images/background.jpg") no-repeat center center;
   background-size: cover;
 
-  /* Adjust height/padding to your preference */
+  /* Adjust height/padding as needed */
   min-height: 400px;
   padding: 60px 20px;
 
-  /* Center content vertically and horizontally */
+  /* Center content */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +69,7 @@ nav a:hover {
   margin: 20px 0;
 }
 
-/* Main Content Area */
+/* Main Content Container */
 .content {
   max-width: 800px;
   margin: 20px auto;
