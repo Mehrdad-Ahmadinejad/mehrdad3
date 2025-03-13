@@ -5,13 +5,13 @@
   box-sizing: border-box;
 }
 
-/* Body (No background image here!) */
+/* Body uses a simple background color (no image) */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0; /* A simple light grey background */
+  background-color: #f0f0f0;
 }
 
-/* Navigation Bar Styling */
+/* Navigation Bar */
 nav {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
@@ -37,27 +37,23 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Highlight the active (current) page link */
 nav a.active {
-  text-decoration: underline; /* Highlight 'Home' as active page */
+  text-decoration: underline;
 }
 
-/* Hero Section (Top Banner on Home Page) */
+/* Hero Section: FIXED HEIGHT so it doesn't fill the entire page */
 .hero {
-  /* The ONLY place we use the background image */
   background: url("images/background.jpg") no-repeat center center;
   background-size: cover;
+  height: 400px; /* Fixed height; adjust as needed */
 
-  /* Adjust height/padding as needed */
-  min-height: 400px;
-  padding: 60px 20px;
-
-  /* Center content */
+  /* Center content in the hero */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  /* Text styling */
   color: #fff;
   text-align: center;
 }
@@ -69,11 +65,11 @@ nav a.active {
   margin: 20px 0;
 }
 
-/* Main Content Container */
+/* Content Below Hero */
 .content {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #fff;  /* White container for readability */
-  border-radius: 8px;      /* Rounded corners */
+  background-color: #fff;
+  border-radius: 8px;
 }
