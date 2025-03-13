@@ -13,12 +13,11 @@ body {
 
 /* Site Header with topbanner image */
 .site-header {
-  /* Use your topbanner image for the header background */
   background: url("images/topbanner.jpg") no-repeat center center;
   background-size: cover;
   text-align: center;
-  color: #000; /* Use black text */
-  padding: 60px 20px; /* Adjust padding for desired height */
+  color: #000; /* black text */
+  padding: 60px 20px; /* Adjust height by changing padding */
 }
 
 .site-header h1 {
@@ -39,8 +38,7 @@ body {
 
 /* Navigation Bar */
 nav {
-  /* Entire nav bar is a blue strip */
-  background-color: #4A90E2;
+  background-color: #4A90E2; /* Blue nav bar */
   padding: 10px;
 }
 
@@ -55,29 +53,26 @@ nav li {
 }
 
 nav a {
-  /* Tab text is black */
-  color: #000;
+  color: #000; /* Black text on the blue tabs */
   text-decoration: none;
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 4px;
 }
 
-/* Hover/Active states */
 nav a:hover,
 nav a.active {
-  /* Darker blue background, white text on hover or active */
-  background-color: #3B7BB8;
-  color: #fff;
+  background-color: #3B7BB8; /* Darker blue on hover/active */
+  color: #fff;               /* White text on hover/active */
 }
 
-/* Optional Banner Section (Below Nav) */
+/* Optional Banner Section */
 .banner {
   background: url("images/banner.jpg") no-repeat center center;
   background-size: cover;
   height: 300px; /* Adjust as needed */
   max-width: 1500px;
-  margin: 0px auto;
+  margin: 0 auto;
   border-radius: 8px;
 }
 
@@ -106,42 +101,31 @@ nav a.active {
   flex: 1;
 }
 
-/* Contact/Info Section */
-.contact-info {
+/* Main Content Section (Two-Column Layout) */
+.main-content {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
-  max-width: 1000px;
-  margin: 20px auto;
 }
 
-.info-box {
-  flex: 1 1 200px;
+.left-column {
+  flex: 2;
+  margin-right: 20px;
 }
 
-.info-box h3 {
+.right-column {
+  flex: 1;
+}
+
+/* Headings, paragraphs, etc. within the main content */
+.main-content h2 {
   margin-bottom: 10px;
 }
 
-.info-box p,
-.info-box li {
-  line-height: 1.5;
-  margin-bottom: 8px;
-}
-
-.info-box ul {
-  list-style: disc;
-  margin-left: 20px;
-}
-
-/* Main Content Area */
-.content {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
+.main-content p {
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
