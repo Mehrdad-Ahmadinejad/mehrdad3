@@ -32,7 +32,7 @@ body {
 /* Navigation Bar */
 nav {
   /* Black background behind the tabs */
-  background-color: #4A90E2;
+  background-color: #4A90E2; /* Light blue color */
   padding: 10px;
 }
 
@@ -69,8 +69,8 @@ nav a.active {
   background: url("images/banner.jpg") no-repeat center center;
   background-size: cover;
   height: 300px; /* Adjust as needed */
-  max-width: 1000px;
-  margin: 20px auto;
+  max-width: 1500px;
+  margin: 0px auto;
   border-radius: 8px;
 }
 
