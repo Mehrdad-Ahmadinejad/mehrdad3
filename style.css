@@ -17,12 +17,7 @@ body {
   background-size: cover;
   text-align: center;
   color: #000; /* black text */
-  padding: 60px 20px; /* Adjust height by changing padding */
-}
-
-.site-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  padding: 60px 20px; /* Adjust padding to control header height */
 }
 
 .site-header h2 {
@@ -66,63 +61,30 @@ nav a.active {
   color: #fff;               /* White text on hover/active */
 }
 
-/* Optional Banner Section */
-.banner {
-  background: url("images/banner.jpg") no-repeat center center;
-  background-size: cover;
-  height: 300px; /* Adjust as needed */
-  max-width: 1500px;
-  margin: 0 auto;
-  border-radius: 8px;
-}
-
-/* Hero Section */
-.hero {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  background-color: #fff;
+/* Main Content (Single Column) */
+.main-content {
   max-width: 1000px;
   margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
   border-radius: 8px;
 }
 
-.hero-image {
-  flex: 0 0 auto;
-  margin-right: 20px;
-}
-
+/* Profile Pic floating right */
 .profile-pic {
   width: 150px;
   border-radius: 50%;
 }
 
-.hero-text {
-  flex: 1;
-}
-
-/* Main Content Section (Two-Column Layout) */
-.main-content {
-  display: flex;
-  max-width: 1000px;
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.left-column {
-  flex: 2;
-  margin-right: 20px;
-}
-
-.right-column {
-  flex: 1;
-}
-
-/* Headings, paragraphs, etc. within the main content */
-.main-content h2 {
+.float-right {
+  float: right;
+  margin-left: 20px;
   margin-bottom: 10px;
+}
+
+/* Headings & Paragraphs within main content */
+.main-content h1 {
+  margin-bottom: 15px;
 }
 
 .main-content p {
