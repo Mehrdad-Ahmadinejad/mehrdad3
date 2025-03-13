@@ -46,7 +46,7 @@ nav a.active {
 .hero {
   background: url("images/background.jpg") no-repeat center center;
   background-size: cover;
-  height: 400px; /* Fixed height; adjust as needed */
+  height: 100px; /* Fixed height; adjust as needed */
 
   /* Center content in the hero */
   display: flex;
