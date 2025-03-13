@@ -11,12 +11,14 @@ body {
   background-color: #f0f0f0;
 }
 
-/* Site Header (Name & Affiliation at the Top) */
+/* Site Header with topbanner image */
 .site-header {
+  /* Use your topbanner image for the header background */
+  background: url("images/topbanner.jpg") no-repeat center center;
+  background-size: cover;
   text-align: center;
-  background: #4A90E2; /* Light blue color */
   color: #fff;
-  padding: 40px 20px;
+  padding: 60px 20px; /* Adjust padding for desired height */
 }
 
 .site-header h1 {
@@ -27,12 +29,18 @@ body {
 .site-header h2 {
   font-size: 1.5rem;
   font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.site-header h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
 }
 
 /* Navigation Bar */
 nav {
-  /* Black background behind the tabs */
-  background-color: #4A90E2; /* Light blue color */
+  /* Entire nav bar is a blue strip */
+  background-color: #4A90E2;
   padding: 10px;
 }
 
@@ -47,9 +55,7 @@ nav li {
 }
 
 nav a {
-  /* Blue tab slices with black text */
-  display: block;
-  background-color: #4A90E2;
+  /* Tab text is black */
   color: #000;
   text-decoration: none;
   font-weight: bold;
@@ -57,20 +63,21 @@ nav a {
   border-radius: 4px;
 }
 
+/* Hover/Active states */
 nav a:hover,
 nav a.active {
-  /* Darker blue on hover/active, with white text for contrast */
+  /* Darker blue background, white text on hover or active */
   background-color: #3B7BB8;
   color: #fff;
 }
 
-/* Banner Section (if you use a banner image) */
+/* Optional Banner Section (Below Nav) */
 .banner {
   background: url("images/banner.jpg") no-repeat center center;
   background-size: cover;
   height: 300px; /* Adjust as needed */
-  max-width: 1500px;
-  margin: 0px auto;
+  max-width: 1000px;
+  margin: 20px auto;
   border-radius: 8px;
 }
 
