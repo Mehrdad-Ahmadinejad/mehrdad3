@@ -14,7 +14,7 @@ body {
 /* Site Header (Name & Affiliation at the Top) */
 .site-header {
   text-align: center;
-  background: #4A90E2;  /* Nice blue color */
+  background: #4A90E2; /* Light blue color */
   color: #fff;
   padding: 40px 20px;
 }
@@ -31,7 +31,8 @@ body {
 
 /* Navigation Bar */
 nav {
-  background-color: rgba(0, 0, 0, 0.7);
+  /* Black background behind the tabs */
+  background-color: #000;
   padding: 10px;
 }
 
@@ -42,27 +43,34 @@ nav ul {
 }
 
 nav li {
-  margin: 0 15px;
+  margin: 0 5px;
 }
 
 nav a {
-  color: #fff;
+  /* Blue tab slices with black text */
+  display: block;
+  background-color: #4A90E2;
+  color: #000;
   text-decoration: none;
   font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
 }
 
 nav a:hover,
 nav a.active {
-  text-decoration: underline;
+  /* Darker blue on hover/active, with white text for contrast */
+  background-color: #3B7BB8;
+  color: #fff;
 }
 
-/* Banner Section */
+/* Banner Section (if you use a banner image) */
 .banner {
   background: url("images/banner.jpg") no-repeat center center;
   background-size: cover;
-  height: 300px;  /* Adjust height as needed */
-  max-width: 1500px;
-  margin: 0px auto;
+  height: 300px; /* Adjust as needed */
+  max-width: 1000px;
+  margin: 20px auto;
   border-radius: 8px;
 }
 
