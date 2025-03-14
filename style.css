@@ -72,8 +72,8 @@ nav a.active {
 
 /* Profile Pic floating right */
 .profile-pic {
-  width: 200px;    /* or any width you prefer */
-  height: 200px;    /* auto adjusts height to keep original aspect ratio */
+  width: auto;    /* or any width you prefer */
+  height: auto;    /* auto adjusts height to keep original aspect ratio */
   border-radius: 0%;
 }
 
